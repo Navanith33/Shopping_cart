@@ -23,7 +23,8 @@ const itemSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId, // Refers to an ObjectId
         ref: "itemDetails",                      // Refers to the 'item' model
         required: true 
-      }]
+      }],
+      orderPlaced: { type: Date, default: Date.now }, 
  })
 app.use('/user',Router);
 app.use('/admin',adminRouter)

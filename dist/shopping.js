@@ -29,7 +29,8 @@ const cartSchema = new mongoose_1.default.Schema({
             type: mongoose_1.default.Schema.Types.ObjectId, // Refers to an ObjectId
             ref: "itemDetails", // Refers to the 'item' model
             required: true
-        }]
+        }],
+    orderPlaced: { type: Date, default: Date.now },
 });
 app.use('/user', user_1.Router);
 app.use('/admin', admin_1.adminRouter);
