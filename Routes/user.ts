@@ -127,7 +127,7 @@ Router.get("/checkout",UserAuthentication,async(req,res)=>{
             else{
                for (const obj of Cart.item) {
                     userOrders.item.push(obj);
-                    await userOrders.save(); // Save one at a time to avoid ParallelSaveError
+                    await userOrders.save();
                   }
                 const deleteItem = await cart.deleteOne({userId:user._id});
                 res.json({message:"order successfull"});
