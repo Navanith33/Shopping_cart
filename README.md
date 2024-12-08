@@ -14,4 +14,3 @@ View Cart: Get the items in the cart with user/getcartItems.
 Checkout: Use the user/checkout endpoint to place an order.
 View Orders: Use the user/ordersHistory endpoint to view past orders.
 
-
