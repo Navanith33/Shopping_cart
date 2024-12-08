@@ -14,3 +14,16 @@ View Cart: Get the items in the cart with user/getcartItems.
 Checkout: Use the user/checkout endpoint to place an order.
 View Orders: Use the user/ordersHistory endpoint to view past orders.
 
+
+
+
+
+
+First, clone the repository from GitHub to your local machine.
+git clone https://github.com/Navanith33/Shopping_cart.git
+The back-end of the project is built with Node.js and Express, and it uses MongoDB as the database.
+Install the required dependencies using npm:
+npm install
+
+
+
